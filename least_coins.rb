@@ -20,42 +20,31 @@
 #   :nickels => 0,
 #   :pennies => 0
 # }
-
 def least_coins(cents)
-  coins = {}
-  amount = cents
-  
-  if amount >= 25
-    coins[:quarters] = (amount - amount.modulo(25)) / 25
-    amount = amount.modulo(25)
-  else 
-    coins[:quarters] = 0
+  type = {
+    :quarters => 0,
+    :dimes => 0,
+    :nickels => 0,
+    :pennies => 0
+  }
+#Code your answer here!
+  while cents != 0
+    if cents >= 25
+      type[:quarters] += 1
+      cents -= 25
+    elsif cents >= 10 && cents < 25
+      type[:dimes] += 1
+      cents -= 10
+    elsif cents >= 5 && cents < 10
+      type[:nickels] += 1
+      cents -= 5
+    elsif cents >= 1 && cents < 5
+      type[:pennies] += 1
+      cents -= 1
+    end
   end
-  
-  if amount >= 10 
-    coins[:dimes] = (amount - amount.modulo(10)) / 10
-    amount = amount.modulo(10)
-  else 
-    coins[:dimes] = 0
-  end
-  
-  if amount >= 5 
-    coins[:nickels] = (amount - amount.modulo(5)) / 5
-    amount = amount.modulo(5)
-  else 
-    coins[:nickels] = 0
-  end
-  
-  if amount > 0 
-    coins[:pennies] = amount
-  else 
-    coins[:pennies] = 0
-  end
-  
-  coins #calls the hash coins, so that is what least_coins() is equal to when called
+  return type
 end
-
 least_coins(29)
-least_coins(99)
 
 
