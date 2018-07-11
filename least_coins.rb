@@ -14,12 +14,8 @@
 
 
 
-# least_coins = {
-#   :quarters => 0,
-#   :dimes => 0,
-#   :nickels => 0,
-#   :pennies => 0
-# }
+
+
 def least_coins(cents)
   type = {
     :quarters => 0,
