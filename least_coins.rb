@@ -1,4 +1,4 @@
-amount = gets.chomp
+amount = gets.chomp.to_i
 
 def least_coins(amount)
   coin_type = {
@@ -8,12 +8,8 @@ def least_coins(amount)
     :pennies => 0
   }
 
-if amount >= 25
-  coin_type[:quarters] += 1 
-   end
-end
-puts least_coins(amount)
-  
+
+
   
 
 
