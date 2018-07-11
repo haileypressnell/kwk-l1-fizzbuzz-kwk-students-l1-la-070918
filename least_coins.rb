@@ -12,3 +12,6 @@
 # end
 # puts least_coins(c_amount)
 
+least_coins = {
+  
+}
