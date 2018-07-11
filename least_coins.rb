@@ -41,6 +41,6 @@ def least_coins(cents)
   end
   return type
 end
-least_coins(29)
+puts least_coins(29)
 
 
