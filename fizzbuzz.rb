@@ -10,3 +10,7 @@ x=16
 end
 
 
+coin_amount = 50
+  if coin_amount / 25  
+    puts 
+    
