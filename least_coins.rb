@@ -8,7 +8,7 @@ def least_coins(amount)
     :pennies => 0
   }
 
-if amount = 25
+if amount >= 25
   coin_type[:quarters] += 1 
   amount -= 25
    end
