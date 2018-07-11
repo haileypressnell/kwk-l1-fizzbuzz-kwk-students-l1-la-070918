@@ -9,8 +9,9 @@ def least_coins(amount)
   }
 
 if amount >= 25
-  coin_type[:quarters]
-  coin_type += 1 
+  coin_type[:quarters] += 1 
+  puts coin_type[:quarters]
+   
 end
 end
 puts least_coins(amount)
