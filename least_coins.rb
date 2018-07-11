@@ -4,5 +4,5 @@
 
 c_amount = gets.strip
 if c_amount / 10 > 1
-  puts c_amount/10 + "dimes"
+  puts c_amount / 10 + "dimes"
 end
