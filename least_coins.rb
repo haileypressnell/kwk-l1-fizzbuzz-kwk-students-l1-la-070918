@@ -9,3 +9,4 @@ def least_coins(c_amount)
     puts c_amount / 10 + "dimes"
   end
 end
+puts least_coins
