@@ -3,6 +3,8 @@
 #   puts Integer amount/10
 
 c_amount = gets.strip
-if "#{c_amount}" / 10 > 1
+
+def least_coins(c_amount)
+  if c_amount / 10 > 1
   puts c_amount / 10 + "dimes"
 end
