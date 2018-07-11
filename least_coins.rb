@@ -5,7 +5,7 @@
 c_amount = gets.strip
 
 def least_coins(c_amount)
-  if c_amount%10 > 0 
+  if c_amount%10 = 0 
     puts c_amount%10 
   end
 end
