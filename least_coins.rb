@@ -1,4 +1,4 @@
-amount = get.strip
+amount = gets.strip
 
 def least_coins(amount)
   coin_type = {
